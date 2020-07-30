@@ -4,12 +4,12 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket-12312312312"
-  acl    = "private"
+resource "aws_s3_bucket" "optydev.tech" {
+  bucket = "optydev.tech"
+  acl    = "public"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "optydev.tech"
     Environment = "Dev"
   }
 }
